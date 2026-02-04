@@ -19,5 +19,5 @@ O projeto inclui um script SQL para criação do banco de dados e inserção de 
 ## Objetivo
 Praticar conceitos de desenvolvimento web e banco de dados por meio da criação de um sistema de loja online.
 
-## 📌 Status
+## Status
 Concluído
