@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta - Enfermagem Store</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="../../index.html">Enfermagem Store</a>
+    </div>
+</nav>
+
+<div class="container my-5 text-center">
+
+    <h2 class="fw-bold">Olá, <span id="userName"></span> 👋</h2>
+
+    <p class="fs-5 mt-3">Bem-vinda à sua conta!</p>
+
+    <button class="btn btn-danger mt-4" onclick="logout()">Sair da conta</button>
+
+</div>
+
+<script src="../../assets/js/script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const user = JSON.parse(localStorage.getItem("userLogged"));
+
+    if (!user) {
+        window.location.href = "login.html";
+    } else {
+        document.getElementById("userName").textContent = user.nome;
+    }
+});
+</script>
+
+</body>
+</html>

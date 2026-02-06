@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container my-5 text-center">
+
+    <h2 class="fw-bold mb-4">Painel do Administrador</h2>
+
+    <p class="fs-5 mb-4">Bem-vindo ao sistema de gerenciamento.</p>
+
+    <a href="../produtos/admin-produtos.html" class="btn btn-primary btn-lg w-50 mt-3">Gerenciar Produtos</a>
+    <a href="../pedidos/admin-pedidos.html" class="btn btn-secondary btn-lg w-50 mt-3">Gerenciar Pedidos</a>
+
+    <button class="btn btn-danger btn-lg w-50 mt-4" onclick="adminLogout()">Sair</button>
+
+</div>
+
+<script src="../../assets/js/script.js"></script>
+
+<script>
+// Proteção da página
+document.addEventListener("DOMContentLoaded", () => {
+    if (!localStorage.getItem("adminLogged")) {
+        window.location.href = "../login/admin-login.html";
+    }
+});
+</script>
+
+</body>
+</html>

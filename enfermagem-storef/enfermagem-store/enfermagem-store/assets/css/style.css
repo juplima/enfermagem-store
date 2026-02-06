@@ -1,0 +1,157 @@
+/* ------------------------------------
+   TEMA ENFERMAGEM 
+------------------------------------ */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #F4F7FB; /* fundo  */
+    color: #2E2E2E;
+}
+
+/* ------------------------------------
+   NAVBAR
+------------------------------------ */
+.navbar {
+    background: linear-gradient(90deg, #B8E6F5, #C9B6E4);
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: #2E2E2E !important;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.nav-link {
+    color: #2E2E2E !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #6A5FBB !important; /* lilás mais forte */
+}
+
+/* ------------------------------------
+   BOTÕES
+------------------------------------ */
+.btn-primary {
+    background: #8ECFE0 !important; /* azul claro */
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #6FB6C8 !important;
+}
+
+.btn-success {
+    background: #C9B6E4 !important; /* lilás */
+    border: none;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background: #B79AD8 !important;
+}
+
+.btn-warning {
+    background: #FCECCF !important;
+    color: #7A5B24;
+    border: none;
+}
+
+.btn-danger {
+    background: #CC3A3A !important;
+    border: none;
+}
+
+/* ------------------------------------
+   CARDS DE PRODUTOS
+------------------------------------ */
+.card {
+    background: #FFFFFF;
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.25s ease;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 28px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    background: #B8E6F5;
+}
+
+.card-body h5 {
+    font-weight: 600;
+    color: #3A47A3;
+}
+
+/* ------------------------------------
+   PÁGINA DE PRODUTO
+------------------------------------ */
+#product-image {
+    border-radius: 15px;
+    border: 4px solid #C9B6E4;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ------------------------------------
+   FORMULÁRIOS
+------------------------------------ */
+form .form-control {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #C9B6E4;
+    background: #FFFFFF;
+    transition: 0.25s ease;
+}
+
+form .form-control:focus {
+    border-color: #8ECFE0;
+    box-shadow: 0 0 0 3px rgba(126,199,217,0.4);
+}
+
+form label {
+    font-weight: 600;
+    color: #3A47A3;
+}
+
+/* ------------------------------------
+   TABELAS — ADMIN
+------------------------------------ */
+.table thead {
+    background: #8ECFE0;
+    color: #FFFFFF;
+}
+
+.table tbody tr:hover {
+    background: #E8F9FF;
+}
+
+/* ------------------------------------
+   FOOTER
+------------------------------------ */
+footer {
+    background: #C9B6E4;
+    color: #2E2E2E;
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 3px solid #B8E6F5;
+}
